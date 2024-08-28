@@ -3,7 +3,7 @@ name: Build and Push Backend Docker Image
 on:
   push:
     branches:
-      - main  # or the branch you prefer
+      - main  # Ensure this matches your branch name
 
 jobs:
   build:
@@ -27,7 +27,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: your-dockerhub-username/backend-image:latest
+        tags: ajaymohite123/backend-image:latest
 
     - name: Log out from Docker Hub
       run: docker logout
